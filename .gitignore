@@ -1,0 +1,39 @@
+# Publish only the Skill and its user-facing distribution files.
+# Everything else stays local, including AGENTS.md, .agents/, tests/,
+# package.json, development notes, reports, backups and previews.
+*
+
+!/.gitignore
+!/README.md
+!/LICENSE
+!/SKILL.md
+!/index.json
+
+!/agents/
+!/agents/openai.yaml
+
+!/scripts/
+!/scripts/library.mjs
+!/scripts/tracking.mjs
+!/scripts/rules.mjs
+!/scripts/codex-hook.mjs
+
+!/rules/
+!/rules/UXR-*.md
+
+!/references/
+!/references/project-tracking.md
+!/references/rule-format.md
+!/references/maintenance.md
+
+!/adapters/
+!/adapters/codex/
+!/adapters/codex/README.md
+!/adapters/codex/hooks.example.json
+
+!/assets/
+!/assets/icon.svg
+!/assets/project-template/
+!/assets/project-template/design/
+!/assets/project-template/design/uiux-design.md
+!/assets/project-template/design/uiux-adoption.json

@@ -1,0 +1,460 @@
+{
+  "schema_version": 1,
+  "ruleset": "uiux-refine-rules",
+  "rules": [
+    {
+      "id": "UXR-0001",
+      "title": "柔和表面层级",
+      "summary": "以表面色阶区分容器，必要的控件边界保持可辨。",
+      "tags": [
+        "soft-surfaces",
+        "theme"
+      ],
+      "level": "optional",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "142c074d8db3904b39587b1cdd3dc46ffe4b7b4706bb27b349e87b7d7f76c059",
+      "path": "rules/UXR-0001.md"
+    },
+    {
+      "id": "UXR-0002",
+      "title": "输入框双环焦点",
+      "summary": "用清晰焦点环表达键盘位置，双环是可选表现。",
+      "tags": [
+        "focus",
+        "input"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "b8e891fb17fa43001df0647a290f65dcae7a8e042bc922ffeaa2b8f8aa627cb8",
+      "path": "rules/UXR-0002.md"
+    },
+    {
+      "id": "UXR-0003",
+      "title": "暗色字重校准",
+      "summary": "暗色字重按字体和文本角色验证，不全站固定减档。",
+      "tags": [
+        "dark-type",
+        "typography"
+      ],
+      "level": "optional",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "a46c73d568fdcc7b2d8e95485a0b6e46a3c04123273e1662cacf25c5b9dd9b7a",
+      "path": "rules/UXR-0003.md"
+    },
+    {
+      "id": "UXR-0004",
+      "title": "短文本逐字对焦",
+      "summary": "逐字模糊对焦仅用于短装饰文本，减少动态效果时立即显示。",
+      "tags": [
+        "text-reveal"
+      ],
+      "level": "optional",
+      "status": "active",
+      "depends_on": [
+        "UXR-0028"
+      ],
+      "replaced_by": [],
+      "hash": "694cf3a1fb67e9bf743bf5721dd4750442962cd94976fa9a6d36825003154306",
+      "path": "rules/UXR-0004.md"
+    },
+    {
+      "id": "UXR-0005",
+      "title": "行内图标对齐",
+      "summary": "根据字体基线和图标视框调整行内图标。",
+      "tags": [
+        "inline-icon"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "cd0105b1c768f2a629456461fd5851c026b24a357d1cedc9886511e48079b30e",
+      "path": "rules/UXR-0005.md"
+    },
+    {
+      "id": "UXR-0006",
+      "title": "动态数值宽度",
+      "summary": "动态数值使用等宽数字，并处理位数与单位变化。",
+      "tags": [
+        "numeric",
+        "table",
+        "counter"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "cc8c7390cbe279d31396b6b937ebc7829fe40620e27f18e1bf52e52b9fcb7b0c",
+      "path": "rules/UXR-0006.md"
+    },
+    {
+      "id": "UXR-0007",
+      "title": "内容区平滑展开",
+      "summary": "使用 CSS Grid 展开内容时同步处理隐藏状态与焦点。",
+      "tags": [
+        "disclosure",
+        "thinking-panel"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0028"
+      ],
+      "replaced_by": [],
+      "hash": "098ff1384bfd8d4bb02c8fd4f0de8335d09ed765d91885b82c122b3944d305ed",
+      "path": "rules/UXR-0007.md"
+    },
+    {
+      "id": "UXR-0008",
+      "title": "正文换行优化",
+      "summary": "正文可使用 pretty 改善换行，保留正常排版回退。",
+      "tags": [
+        "body-wrap",
+        "typography"
+      ],
+      "level": "optional",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "84898cc6e14c4cc8690651a9637a8d00185be261d92c96d439e8384ef29a6e87",
+      "path": "rules/UXR-0008.md"
+    },
+    {
+      "id": "UXR-0009",
+      "title": "拖拽吸附反馈",
+      "summary": "拖拽松手后明确停靠，吸附过程不产生多余回晃。",
+      "tags": [
+        "drag-snap"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0028"
+      ],
+      "replaced_by": [],
+      "hash": "566dfa08a06a7a603c099cb60f5b602050efa374155eab16e8ea723c96b23fe0",
+      "path": "rules/UXR-0009.md"
+    },
+    {
+      "id": "UXR-0010",
+      "title": "成功反馈小动效",
+      "summary": "轻量成功反馈可短暂回弹，持续状态独立保留。",
+      "tags": [
+        "success-motion"
+      ],
+      "level": "optional",
+      "status": "active",
+      "depends_on": [
+        "UXR-0028"
+      ],
+      "replaced_by": [],
+      "hash": "82b8b861cc72526988a20124b89d1ca0f7d63d2f007b0d5fd65ff2d7f6082ff3",
+      "path": "rules/UXR-0010.md"
+    },
+    {
+      "id": "UXR-0011",
+      "title": "浮层选型",
+      "summary": "按任务阻断、信息寿命和回应要求选择浮层。",
+      "tags": [
+        "overlay-choice"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "67ecb88db1c8eac5df318fbe4aa8d81b1e8a2a653715dafd85a94be7e729260c",
+      "path": "rules/UXR-0011.md"
+    },
+    {
+      "id": "UXR-0012",
+      "title": "Tooltip 补充说明",
+      "summary": "Tooltip 提供非关键说明，并支持键盘焦点访问。",
+      "tags": [
+        "tooltip"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "37752d2e975e65f66b812026daf7679a912c01a99fa40a9d938f1d5ef3ab08a4",
+      "path": "rules/UXR-0012.md"
+    },
+    {
+      "id": "UXR-0013",
+      "title": "Toast 短结果提示",
+      "summary": "Toast 只承载可再次确认的短结果，操作机会不能统一两秒结束。",
+      "tags": [
+        "toast"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "83c2ad9ffccd41e7ed499319cc35c5e9ed4f2d8db4ab92c010f8013590fbe254",
+      "path": "rules/UXR-0013.md"
+    },
+    {
+      "id": "UXR-0014",
+      "title": "持续 Alert",
+      "summary": "持续通知在相关状态解除或用户合理关闭前保留。",
+      "tags": [
+        "banner-alert"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "468015e860521ba6b0c2552305acbf70cd685ccfd8743c113a89f26a1dc01e92",
+      "path": "rules/UXR-0014.md"
+    },
+    {
+      "id": "UXR-0015",
+      "title": "模态对话框",
+      "summary": "模态对话框阻断背景交互，保持完整焦点与取消路径。",
+      "tags": [
+        "modal"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "04db379501f4404b9476e8526f47cbce120f913d28c6f16e805941a5549c0efa",
+      "path": "rules/UXR-0015.md"
+    },
+    {
+      "id": "UXR-0016",
+      "title": "局部 Popconfirm",
+      "summary": "Popconfirm 用于简短局部确认，频率和风险共同决定是否使用。",
+      "tags": [
+        "popconfirm"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0020"
+      ],
+      "replaced_by": [],
+      "hash": "c225a1590eec6cf5df630ab4c60e757eebeb642a412bc9e58ed4ba5ecff98477",
+      "path": "rules/UXR-0016.md"
+    },
+    {
+      "id": "UXR-0017",
+      "title": "弹窗抽屉与页面",
+      "summary": "根据内容规模、上下文对照和流程独立性选择容器。",
+      "tags": [
+        "container-choice",
+        "drawer"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "aaa61c9bd27ef79103a4cfcf1a04b4a40f1a28a1151bd5c0edb05db25bb9af2b",
+      "path": "rules/UXR-0017.md"
+    },
+    {
+      "id": "UXR-0018",
+      "title": "未保存输入保护",
+      "summary": "所有退出路径一致处理未保存输入，草稿能力需真实存在。",
+      "tags": [
+        "form",
+        "unsaved"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "249f8a5ed1ead9ceb90bc63d30dd000f1094399411d529f8045b25cbaf7e01ab",
+      "path": "rules/UXR-0018.md"
+    },
+    {
+      "id": "UXR-0019",
+      "title": "可撤销操作",
+      "summary": "可可靠撤销时优先直接执行，前提是恢复语义真实成立。",
+      "tags": [
+        "undo",
+        "delete"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0020"
+      ],
+      "replaced_by": [],
+      "hash": "61623e5dccb240674246827f60ec5c006cb67f8fe5972de4150e2b14fb6d0fc1",
+      "path": "rules/UXR-0019.md"
+    },
+    {
+      "id": "UXR-0020",
+      "title": "动作按钮文案",
+      "summary": "按钮名称说明实际动作，必要时包含费用或不可逆后果。",
+      "tags": [
+        "action-copy"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "13da6e7eecf22a8c476239a8ed005b7e83ab96617a806c25a7c3644ad740928f",
+      "path": "rules/UXR-0020.md"
+    },
+    {
+      "id": "UXR-0021",
+      "title": "Bottom Sheet",
+      "summary": "底部面板吸附位置按内容、视口和输入方式调整。",
+      "tags": [
+        "bottom-sheet",
+        "mobile-overlay"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0028",
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "6fb070ff76c73544524db51c5dc765c16dd06ce5f67deb4f506367aa9338502e",
+      "path": "rules/UXR-0021.md"
+    },
+    {
+      "id": "UXR-0022",
+      "title": "ActionSheet",
+      "summary": "底部动作列表区分危险动作并提供独立取消入口。",
+      "tags": [
+        "action-sheet",
+        "mobile-overlay"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0020",
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "beda9bec7e84ab1e78161b7dbb1358b4f3392420124cce194450100324e4d686",
+      "path": "rules/UXR-0022.md"
+    },
+    {
+      "id": "UXR-0023",
+      "title": "Snackbar 撤销条",
+      "summary": "撤销条提供明确恢复动作，时限与真实恢复能力一致。",
+      "tags": [
+        "snackbar"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0013",
+        "UXR-0019"
+      ],
+      "replaced_by": [],
+      "hash": "4af53ef59138247d779f11197069c162f67646236f0026b0fc1ab33f9ceea46e",
+      "path": "rules/UXR-0023.md"
+    },
+    {
+      "id": "UXR-0024",
+      "title": "危险操作 AlertDialog",
+      "summary": "不可逆重要动作先说明损失，再由用户明确执行。",
+      "tags": [
+        "alert-dialog",
+        "irreversible"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [
+        "UXR-0015",
+        "UXR-0020"
+      ],
+      "replaced_by": [],
+      "hash": "70ce957b964bf41e29dd72129739dbb3d3530b334447dd8ecc43fa07afc70394",
+      "path": "rules/UXR-0024.md"
+    },
+    {
+      "id": "UXR-0025",
+      "title": "分步 Tour",
+      "summary": "引导逐步绑定真实操作目标，用户可以退出。",
+      "tags": [
+        "tour",
+        "onboarding"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "76eb1ad47a4efe2f1b5a312bae98f58677e029a0573a30ad21ed99dac0e90651",
+      "path": "rules/UXR-0025.md"
+    },
+    {
+      "id": "UXR-0026",
+      "title": "媒体 Lightbox",
+      "summary": "灯箱提供可访问的大图查看、缩放和退出。",
+      "tags": [
+        "lightbox",
+        "media"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [
+        "UXR-0029"
+      ],
+      "replaced_by": [],
+      "hash": "031a34b131870add39b4ba6289d8ffaa45b32aff6ee06957eed837d8509b3312",
+      "path": "rules/UXR-0026.md"
+    },
+    {
+      "id": "UXR-0027",
+      "title": "行内校验反馈",
+      "summary": "错误在对应字段附近持续显示，直到有效复验或错误不再适用。",
+      "tags": [
+        "inline-error",
+        "form"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "ce109598971b91b3cc87e64e0ab6edc7896c442e780332b5ada246cf5a8a2b32",
+      "path": "rules/UXR-0027.md"
+    },
+    {
+      "id": "UXR-0028",
+      "title": "减少动态效果",
+      "summary": "非必要动画遵循系统减少动态效果偏好。",
+      "tags": [
+        "reduced-motion"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "dc4dec3b9fb506ff47f3252aee1834d67acad284e27447c5bc9ac273d57aea58",
+      "path": "rules/UXR-0028.md"
+    },
+    {
+      "id": "UXR-0029",
+      "title": "浮层焦点与退出",
+      "summary": "按真实模态性管理背景、焦点和退出，不由组件名字推断。",
+      "tags": [
+        "overlay-access"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "fc36a60769217bfe1e97c2c8c5adb0ab21d1158ce4a6c62d67374df9899e2f01",
+      "path": "rules/UXR-0029.md"
+    }
+  ]
+}

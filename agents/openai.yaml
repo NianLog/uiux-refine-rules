@@ -1,0 +1,7 @@
+interface:
+  display_name: "UIUX 优化规则库"
+  short_description: "按场景加载可验证的 UIUX 规则，追踪项目引用并复核规则变更"
+  default_prompt: "使用 $uiux-refine-rules 检查当前项目引用，并按正在设计的组件加载规则、给出优化约束与验收方法。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#195D50"

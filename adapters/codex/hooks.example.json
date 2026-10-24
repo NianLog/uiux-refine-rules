@@ -1,0 +1,30 @@
+{
+  "description": "Local read-only UIUX rule tracking. Replace __SKILL_ROOT__ before installation.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"__SKILL_ROOT__/scripts/codex-hook.mjs\"",
+            "timeout": 10,
+            "additionalContextLimit": 500
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"__SKILL_ROOT__/scripts/codex-hook.mjs\"",
+            "timeout": 10,
+            "additionalContextLimit": 500
+          }
+        ]
+      }
+    ]
+  }
+}
