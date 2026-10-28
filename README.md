@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-195D50?style=flat-square" alt="MIT 开源协议"></a>
-  <a href="rules"><img src="https://img.shields.io/badge/Design_Rules-29-3C786B?style=flat-square" alt="29 条设计规则"></a>
+  <a href="rules"><img src="https://img.shields.io/badge/Design_Rules-32-3C786B?style=flat-square" alt="32 条设计规则"></a>
   <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Agent_Skills-compatible-526B80?style=flat-square" alt="Agent Skills 格式"></a>
   <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-%E2%89%A522-66784A?style=flat-square" alt="规则检查工具需要 Node.js 22 或以上"></a>
 </p>
@@ -37,7 +37,7 @@
 | 数字跳动、展开抖动、动画太多 | 数字对齐、内容展开、操作反馈，以及减少动画时的表现 |
 | 以前定下的设计要求变了 | 找出受影响的设计记录，判断是否需要调整，保留已有决定 |
 
-初版有 **29 条规则**，覆盖文字、颜色层级、动效、表单、提示、确认、移动端面板、分步引导和图片查看。
+目前有 **32 条规则**，覆盖文字、颜色层级、动效、表单、提示、确认、移动端面板、分步引导、图片查看、选择与命令菜单，以及聊天输入和新消息跟随。
 
 每条规则都写明适用场景、不适用的情况、具体做法和检查方式。涉及某个组件时才读取对应内容；有冲突时，先说明取舍，再由你决定。
 
@@ -176,7 +176,7 @@ Codex 用户可以让 AI 按 [自动提醒说明](adapters/codex/README.md) 帮�
 | 位置 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 技能入口、使用流程与按需读取规则 |
-| [rules/](rules) | 29 条独立规则，每条包含条件、做法、验收和反例 |
+| [rules/](rules) | 32 条独立规则，每条包含条件、做法、验收和反例 |
 | [index.json](index.json) | 从规则生成的检索索引与内容指纹 |
 | [scripts/](scripts) | 使用 Node.js 标准库的检查和记录工具 |
 | [references/](references) | Skill 按需读取的项目追踪、规则格式和规则维护说明 |

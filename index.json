@@ -44,7 +44,7 @@
       "status": "active",
       "depends_on": [],
       "replaced_by": [],
-      "hash": "a46c73d568fdcc7b2d8e95485a0b6e46a3c04123273e1662cacf25c5b9dd9b7a",
+      "hash": "f78ac7737ab37ddd26fac0b3e0fba2419124313c0a4c08d35b17045e9aa41693",
       "path": "rules/UXR-0003.md"
     },
     {
@@ -60,7 +60,7 @@
         "UXR-0028"
       ],
       "replaced_by": [],
-      "hash": "694cf3a1fb67e9bf743bf5721dd4750442962cd94976fa9a6d36825003154306",
+      "hash": "da3cd79862afc1446d9a5c8ccec88f49b5c9a8b2cb53eed2619fbf4796e4b564",
       "path": "rules/UXR-0004.md"
     },
     {
@@ -160,7 +160,7 @@
     {
       "id": "UXR-0011",
       "title": "浮层选型",
-      "summary": "按任务阻断、信息寿命和回应要求选择浮层。",
+      "summary": "先判断是否需要额外反馈，再按信息寿命和回应要求选择浮层。",
       "tags": [
         "overlay-choice"
       ],
@@ -168,7 +168,7 @@
       "status": "active",
       "depends_on": [],
       "replaced_by": [],
-      "hash": "67ecb88db1c8eac5df318fbe4aa8d81b1e8a2a653715dafd85a94be7e729260c",
+      "hash": "9fdb0c1ae677e70c49678e12c2143be52511a5168eb4edd4db575fefaa38cc65",
       "path": "rules/UXR-0011.md"
     },
     {
@@ -259,7 +259,7 @@
         "UXR-0029"
       ],
       "replaced_by": [],
-      "hash": "aaa61c9bd27ef79103a4cfcf1a04b4a40f1a28a1151bd5c0edb05db25bb9af2b",
+      "hash": "c9956eaba07cdd0dfffef3208dda2edffb4a9ff7d80f13005aeef75377c10270",
       "path": "rules/UXR-0017.md"
     },
     {
@@ -274,7 +274,7 @@
       "status": "active",
       "depends_on": [],
       "replaced_by": [],
-      "hash": "249f8a5ed1ead9ceb90bc63d30dd000f1094399411d529f8045b25cbaf7e01ab",
+      "hash": "f57f23772a304c7057200bbaccca417463d7aa69a912522e91ed1f9d5ca9e000",
       "path": "rules/UXR-0018.md"
     },
     {
@@ -291,7 +291,7 @@
         "UXR-0020"
       ],
       "replaced_by": [],
-      "hash": "61623e5dccb240674246827f60ec5c006cb67f8fe5972de4150e2b14fb6d0fc1",
+      "hash": "d42a44d1812e0254fc2fe13bd15d62b5f8e6b353b980fa11ead4fca2258f4bfd",
       "path": "rules/UXR-0019.md"
     },
     {
@@ -358,7 +358,7 @@
         "UXR-0019"
       ],
       "replaced_by": [],
-      "hash": "4af53ef59138247d779f11197069c162f67646236f0026b0fc1ab33f9ceea46e",
+      "hash": "7fbacc8e586316c183df47800fa9a0a7ae89fc6df58c26410a8d5cf741260439",
       "path": "rules/UXR-0023.md"
     },
     {
@@ -455,6 +455,52 @@
       "replaced_by": [],
       "hash": "fc36a60769217bfe1e97c2c8c5adb0ab21d1158ce4a6c62d67374df9899e2f01",
       "path": "rules/UXR-0029.md"
+    },
+    {
+      "id": "UXR-0030",
+      "title": "选择输入与命令菜单选型",
+      "summary": "按选择值或执行命令区分控件，数量和外观不能单独决定选型。",
+      "tags": [
+        "select",
+        "dropdown",
+        "choice"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "56b026a62e2eab0a6cb7f10349264e696a7dbe94ced04c0fab4bb23ab1e32cf5",
+      "path": "rules/UXR-0030.md"
+    },
+    {
+      "id": "UXR-0031",
+      "title": "组合输入与聊天发送",
+      "summary": "输入法确认不触发发送，兼容处理不能吞掉用户后续主动输入。",
+      "tags": [
+        "chat-input",
+        "ime"
+      ],
+      "level": "must",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "af6eef5ff10a222f7242ca6b70ffc627574075a6bedc97c6f5cd6e020ed5813a",
+      "path": "rules/UXR-0031.md"
+    },
+    {
+      "id": "UXR-0032",
+      "title": "聊天新消息跟随与历史阅读",
+      "summary": "区分跟随最新与阅读历史，内容变化不能擅自改变用户的阅读位置。",
+      "tags": [
+        "chat-scroll",
+        "streaming"
+      ],
+      "level": "default",
+      "status": "active",
+      "depends_on": [],
+      "replaced_by": [],
+      "hash": "ae3a6620b95a6a1165d363796a31eb9eea0ce4beb01efe8655cb9d499b557833",
+      "path": "rules/UXR-0032.md"
     }
   ]
 }

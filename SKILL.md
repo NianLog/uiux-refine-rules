@@ -28,6 +28,17 @@ node "<skill-root>/scripts/rules.mjs" check --project "<project-root>"
 2. 只选择与当前工作有关的标签。未知标签先运行无参数 `query` 查看可用标签，不读取全部规则正文。
 3. 查询候选摘要，再按 ID 读取当前需要的规则全文；脚本自动包含必要依赖。
 
+选定组件后，根据已确认的行为补查标签；组件名称不能代替这些条件判断：
+
+| 已确认的条件 | 补查标签 |
+| --- | --- |
+| 容器中有可编辑输入或未提交修改 | `form`、`unsaved` |
+| 删除或移除后需要恢复 | `undo`；使用撤销条时再查 `snackbar` |
+| 重要动作不可逆或具有高影响后果 | `irreversible`、`action-copy` |
+| 新增或调整移动、缩放、展开等动画 | `reduced-motion` |
+
+只补查当前成立的条件，不把所有标签合并查询。读完选型规则后，继续读取实际选中的组件规则；已有反馈足够时可以不增加浮层或动效，并说明依据。
+
 ```sh
 node "<skill-root>/scripts/rules.mjs" query --tags drawer,form
 node "<skill-root>/scripts/rules.mjs" query --ids UXR-0018 --full
@@ -43,6 +54,8 @@ node "<skill-root>/scripts/rules.mjs" query --ids UXR-0018 --full
 | 表面、焦点和文字 | `soft-surfaces`、`focus`、`dark-type`、`body-wrap`、`inline-icon` |
 | 动态数字和动效 | `numeric`、`text-reveal`、`disclosure`、`drag-snap`、`success-motion` |
 | 引导与媒体 | `tour`、`lightbox` |
+| 选择输入或命令菜单 | `select`、`dropdown`、`choice` |
+| 聊天输入与新消息跟随 | `chat-input`、`ime`、`chat-scroll` |
 
 多个标签采用 OR，返回的是候选，不是全部必须采用。范围过大时缩小标签；没有规则覆盖的场景明确标为缺口，临时建议不得冒充既有规则。
 `must` 表示适用条件成立后必须满足；`default` 是可说明理由的默认方案；`optional` 仅在风格或任务需要时采用。先读排除条件，不能仅根据级别决策。

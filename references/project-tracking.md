@@ -19,7 +19,7 @@
 每个二级设计条目必须放在成对标记内。标记只占一行，包含严格 JSON：
 
 ```markdown
-<!-- uiux:decision {"id":"D-edit-form","tags":["unsaved"],"refs":["UXR-0018@249f8a5ed1ea"],"local":false} -->
+<!-- uiux:decision {"id":"D-edit-form","tags":["unsaved"],"refs":["UXR-0018@f57f23772a30"],"local":false} -->
 ## 编辑表单退出
 
 未修改时直接退出。有未保存修改时，关闭按钮和 Escape 使用同一处理流程；遮罩不能丢弃输入。
@@ -27,7 +27,7 @@
 <!-- /uiux:decision -->
 ```
 
-上面的指纹属于首版示例，实际使用必须通过 query 获取本地当前版本。
+上面的指纹为随库更新的示例，实际使用必须通过 query 获取本地当前版本。
 条目 ID 稳定且不复用；tags 选可用场景标签，refs 列出采用的规则及依赖，不能仅引用主规则漏掉依赖。
 `local:true` 的条目不引用公共规则，写清项目自有决定和依据；建议仍选择相关标签以发现公共规则冲突。
 `local:true, tags:[]` 表示本条没有可匹配的公共规则范围，脚本不能为它发现新规则；必须在改变项目场景时重新判断。
